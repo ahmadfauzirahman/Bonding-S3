@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomePageActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksandsemibold"
+        android:gravity="center"
+        android:text="Bonding \nSuami Dan Istri"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ayah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/bg_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="24dp"
+                android:paddingRight="16dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <net.colindodd.gradientlayout.GradientRelativeLayout
+                        android:id="@+id/materiInformasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="100dp"
+                        android:padding="10dp"
+                        gl:end_color="@color/gradientLightGreen"
+                        gl:orientation="LEFT_RIGHT"
+                        gl:start_color="@color/gradientOrange3">
+
+                        <TextView
+                            android:id="@+id/textViewSub2Title"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:fontFamily="@font/quicksandmedium"
+                            android:text="Hasil Laporan" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub2Title"
+                            android:text="Responden Ibu" />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:src="@drawable/scientific" />
+
+                    </net.colindodd.gradientlayout.GradientRelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true">
+
+                    <net.colindodd.gradientlayout.GradientRelativeLayout
+                        android:id="@+id/penilian"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="100dp"
+                        android:padding="10dp"
+                        gl:end_color="@color/gradientLightBlue"
+                        gl:orientation="LEFT_RIGHT"
+                        gl:start_color="@color/gradientOrange">
+
+                        <TextView
+                            android:id="@+id/textViewSub2TitlePenilian"
+                            style="@style/viewParent.headerText.HomeCardTitle"
+                            android:fontFamily="@font/quicksandmedium"
+                            android:text="Diary Ibu" />
+
+                        <TextView
+                            style="@style/viewParent.headerText.homeCardContent"
+                            android:layout_below="@id/textViewSub2TitlePenilian"
+                            android:text="Kesejahteraan Emosional" />
+
+                        <ImageView
+                            style="@style/homeCardImage"
+                            android:maxHeight="90dp"
+                            android:src="@drawable/medicalfile" />
+
+                    </net.colindodd.gradientlayout.GradientRelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

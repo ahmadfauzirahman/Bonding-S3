@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ci.ahmadfauzirahman.bonding">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.BiodataDiriActivity"></activity>
+        <activity
+            android:name=".view.DetailArtikelActivity"
+            android:label="Materi Informasi"
+            android:parentActivityName=".view.ArtikelActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ArtikelActivity" />
+        </activity>
+        <activity
+            android:name=".view.ArtikelActivity"
+            android:label="Materi Informasi"
+            android:parentActivityName=".view.HomePageActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.HomePageActivity" />
+        </activity>
+        <activity
+            android:name=".view.homepage.HomeMaterInformasiActivity"
+            android:label="Materi Informasi"
+            android:parentActivityName=".view.HomePageActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.HomePageActivity" />
+        </activity>
+        <activity
+            android:name=".view.homepage.HomeKegiatanHarianActivity"
+            android:label="Kegiatan Harian"
+            android:parentActivityName=".view.HomePageActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.HomePageActivity" />
+        </activity>
+        <activity
+            android:name=".view.HomePageAyahActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.HomePageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.ForgotPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.form.KusionerKHSIActivity" />
+        <activity android:name=".view.form.KusionerKDSActivity" />
+        <activity android:name=".view.form.KusionerPAIActivity" />
+        <activity android:name=".view.form.EPDSRespondenActivity" />
+        <activity
+            android:name=".view.form.FormDiaryIbuActivity"
+            android:label="Diary Ibu"
+            android:parentActivityName=".view.DiaryActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.DiaryActivity" />
+        </activity>
+        <activity
+            android:name=".view.DiaryActivity"
+            android:label="@string/title_activity_diary"
+            android:parentActivityName=".view.homepage.HomeKegiatanHarianActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.homepage.HomeKegiatanHarianActivity" />
+        </activity>
+        <activity
+            android:name=".view.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.AkunActivity" />
+        <activity
+            android:name=".view.homepage.RespondenDataIbuActivity"
+            android:label="Penilaian Kesejahteraan Emosional" />
+        <activity android:name=".view.InstrumenAyahActivity" />
+        <activity
+            android:name=".view.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

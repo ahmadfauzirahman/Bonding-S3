@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/parent.contentLayout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/viewParent.headerText"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Bonding (Ibu &amp; Bayi)" />
+
+            <TextView
+                style="@style/viewParent.headerText.contentText"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/quicksandlight"
+                android:text="Bonding alias kedekatan hubungan antara suami dan istri perlu dipelihara dengan berbagai cara yang semuanya bisa mendatangkan “segudang” manfaat!." />
+
+
+            <!--Example with RelativeLayout and Gradient Drawable -->
+            <!-- for Recycler view use any of the layout as model-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <RelativeLayout
+                    android:id="@+id/InstrumenAyah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/home_gradient_maths"
+                    android:minHeight="100dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSub1Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:fontFamily="@font/quicksandmedium"
+                        android:text="Instrumen Ayah" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub1Title"
+                        android:text="Data Diri Suami" />
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:maxHeight="90dp"
+                        android:src="@drawable/father" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--if the second one is used as model for recyclerView, refer:
+            https://appsnipp.com/gradient-layout-for-dynamic-gradients-in-android-without-drawable-library/
+            -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:id="@+id/respondenIbu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    gl:end_color="@color/gradientOrange"
+                    gl:orientation="LEFT_RIGHT"
+                    gl:start_color="@color/gradientLightYellow">
+
+                    <TextView
+                        android:id="@+id/textViewSub2Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:fontFamily="@font/quicksandmedium"
+                        android:text="Responden Ibu" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub2Title"
+                        android:text="Responden Ibu EPDS,PAI,KDS,KHSI" />
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:maxHeight="90dp"
+                        android:src="@drawable/medicalfile" />
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:id="@+id/diary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    gl:end_color="@color/gradientLightYellow2"
+                    gl:orientation="LEFT_RIGHT"
+                    gl:start_color="@color/gradientLightOrange2">
+
+                    <TextView
+                        android:id="@+id/textViewSub3Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:fontFamily="@font/quicksandmedium"
+
+                        android:text="Diary" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub3Title"
+                        android:text="Diary Curhatan Ibu" />
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:maxHeight="90dp"
+                        android:src="@drawable/notes" />
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true">
+
+                <net.colindodd.gradientlayout.GradientRelativeLayout
+                    android:id="@+id/artikel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="100dp"
+                    android:padding="10dp"
+                    gl:end_color="@color/gradientLightYellow2"
+                    gl:orientation="LEFT_RIGHT"
+                    gl:start_color="@color/gradientLightOrange2">
+
+                    <TextView
+                        android:id="@+id/textViewSub4Title"
+                        style="@style/viewParent.headerText.HomeCardTitle"
+                        android:fontFamily="@font/quicksandmedium"
+
+                        android:text="Artikel Kehamilan" />
+
+                    <TextView
+                        style="@style/viewParent.headerText.homeCardContent"
+                        android:layout_below="@id/textViewSub4Title"
+                        android:text="Berisi Materi Artikel Kehamilan Ibu" />
+
+                    <ImageView
+                        style="@style/homeCardImage"
+                        android:maxHeight="90dp"
+                        android:src="@drawable/notes" />
+
+                </net.colindodd.gradientlayout.GradientRelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:id="@+id/cardAkun"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                app:cardCornerRadius="15dp"-->
+            <!--                app:cardPreventCornerOverlap="true">-->
+
+            <!--                <net.colindodd.gradientlayout.GradientRelativeLayout-->
+            <!--                    android:id="@+id/akun"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:minHeight="100dp"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    gl:end_color="@color/gradientLightBlue"-->
+            <!--                    gl:orientation="LEFT_RIGHT"-->
+            <!--                    gl:start_color="@color/gradientViolet">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/textViewSub5Title"-->
+            <!--                        style="@style/viewParent.headerText.HomeCardTitle"-->
+            <!--                        android:fontFamily="@font/quicksandmedium"-->
+
+            <!--                        android:text="Akun" />-->
+
+            <!--                    <TextView-->
+            <!--                        style="@style/viewParent.headerText.homeCardContent"-->
+            <!--                        android:layout_below="@id/textViewSub5Title"-->
+            <!--                        android:text="Study nature, love nature,\nclose to nature" />-->
+
+            <!--                    <ImageView-->
+            <!--                        style="@style/homeCardImage"-->
+            <!--                        android:maxHeight="90dp"-->
+            <!--                        android:src="@drawable/woman" />-->
+
+            <!--                </net.colindodd.gradientlayout.GradientRelativeLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

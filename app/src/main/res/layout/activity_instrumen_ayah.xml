@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.InstrumenAyahActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Instrumen Ayah"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/txtSuami"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Nama Suami"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etNamaAyah"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/et_custom"
+                android:fontFamily="@font/quicksandmedium"
+                android:hint="Nama Suami"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtNomorTelpn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Nomor Telepon"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etNomorTelpn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/et_custom"
+                android:fontFamily="@font/quicksandmedium"
+                android:hint="Nomor Telpon"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Password Suami"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/et_custom"
+                android:fontFamily="@font/quicksandmedium"
+                android:hint="Password Anda"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtUsia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Usia Suami"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/etUsia"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/et_custom"
+                android:fontFamily="@font/quicksandmedium"
+                android:hint="Usia Anda"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/selectAgama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Agama"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/agamaSelect"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.498" />
+
+            <TextView
+                android:id="@+id/radioPekerjaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Pekerjaan"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <RadioGroup
+                android:id="@+id/opsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/PNS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PNS" />
+
+                <RadioButton
+                    android:id="@+id/tenagaHonor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tenaga Honor" />
+
+                <RadioButton
+                    android:id="@+id/Wiraswasta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wiraswasta" />
+
+                <RadioButton
+                    android:id="@+id/PendidikanTerakhir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pendidikan Terakhir" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/radioPendidikanTerakhir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Pendidikan Terakhir"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <RadioGroup
+                android:id="@+id/opsi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/SD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SD" />
+
+                <RadioButton
+                    android:id="@+id/sd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SD" />
+
+                <RadioButton
+                    android:id="@+id/smp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SMP" />
+
+                <RadioButton
+                    android:id="@+id/sma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SMA" />
+
+                <RadioButton
+                    android:id="@+id/perguruan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perguruan Tingggi (D3/S1/S2)" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/radioPenghasilan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Penghasilan"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <RadioGroup
+                android:id="@+id/opsi2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/satujt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Rp, 1.000.000,00" />
+
+                <RadioButton
+                    android:id="@+id/duajt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp, 2.000.000,00 &amp;&amp; Rp, 4.000.000,00" />
+
+                <RadioButton
+                    android:id="@+id/empatjuta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp, 4.000.000,00 &amp;&amp; Rp, 5.000.000,00" />
+
+                <RadioButton
+                    android:id="@+id/limajuta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp, 5.000.000,00" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/radioRiwayat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Pendidikan Terakhir"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <RadioGroup
+                android:id="@+id/opsi3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Ada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ada" />
+
+                <RadioButton
+                    android:id="@+id/tidak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak Ada" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/radioHarapan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Harapan Khusus Terhadap Jenis Kelamin"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <RadioGroup
+                android:id="@+id/opsi4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/tidakharapan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak Ada Harapan Khusus" />
+
+                <RadioButton
+                    android:id="@+id/adaharapn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ada Harapan Khusus" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/radioAnak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Pilih Jenis Kelamin Anak"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <RadioGroup
+                android:id="@+id/opsi5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/laki"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-Laki" />
+
+                <RadioButton
+                    android:id="@+id/perempuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_daftar_skpp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/btn_custom"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Yakin Sudah Mengisi Instrumen Ayah Dengan Benar?"
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/quicksandsemibold"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnArtikel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <!--Example with RelativeLayout and Gradient Drawable -->
+    <!-- for Recycler view use any of the layout as model-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_artikel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"></TextView>
+
+            <TextView
+                android:id="@+id/judul"
+                style="@style/viewParent.headerText.contentTextArtikel"
+                android:fontFamily="@font/quicksandlight"
+                android:padding="10dp"
+                android:text="Bonding alias kedekatan hubungan antara suami dan istri perlu dipelihara dengan berbagai cara yang semuanya bisa mendatangkan “segudang” manfaat!." />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="245dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ibuhamildua">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/isi"
+                android:layout_width="0dp"
+                android:layout_height="0dp"></TextView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

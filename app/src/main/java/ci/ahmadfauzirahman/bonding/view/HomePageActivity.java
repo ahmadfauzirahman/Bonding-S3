@@ -15,6 +15,7 @@ import java.util.Objects;
 
 import ci.ahmadfauzirahman.bonding.R;
 import ci.ahmadfauzirahman.bonding.api.cache.SessionManager;
+import ci.ahmadfauzirahman.bonding.view.form.MateriActivity;
 import ci.ahmadfauzirahman.bonding.view.homepage.HomeKegiatanHarianActivity;
 import ci.ahmadfauzirahman.bonding.view.homepage.HomeMaterInformasiActivity;
 import ci.ahmadfauzirahman.bonding.view.homepage.RespondenDataIbuActivity;
@@ -56,7 +57,7 @@ public class HomePageActivity extends AppCompatActivity {
         materiInformasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(getApplicationContext(), ArtikelActivity.class);
+                intent = new Intent(getApplicationContext(), MateriActivity.class);
                 startActivity(intent);
             }
         });

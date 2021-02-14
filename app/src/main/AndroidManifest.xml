@@ -12,7 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.BiodataDiriActivity"></activity>
+        <activity
+            android:name=".view.form.MateriActivity"
+            android:label="Materi Informasi"
+            android:parentActivityName=".view.HomePageActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.HomePageActivity" />
+        </activity>
+        <activity android:name=".view.BiodataDiriActivity" />
         <activity
             android:name=".view.DetailArtikelActivity"
             android:label="Materi Informasi"
